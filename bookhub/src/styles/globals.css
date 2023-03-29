@@ -112,3 +112,11 @@ button{
   height: 100px;
   width: 100px;
 }
+
+main, body, html,  #__next {
+  height: 100%;
+}
+
+body{
+  overflow: hidden;
+}

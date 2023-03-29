@@ -23,8 +23,7 @@ export default function Feed() {
     }
     
     return (
-        <div>
-       
+        <div className = {styles.topContainer}>
             <Navbar></Navbar>
             <div className={styles.main}>
                 <div className={styles.tabHeaderContainer}>

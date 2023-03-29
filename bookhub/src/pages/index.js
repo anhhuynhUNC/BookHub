@@ -17,7 +17,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={""}>
-        <div className={""}>
+        <div className={styles.feedContainer}>
             <Feed></Feed>
         </div>
       </main>
