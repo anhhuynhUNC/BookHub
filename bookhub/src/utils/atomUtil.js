@@ -1,4 +1,5 @@
 function getRowList(data){
+    if(data == undefined) return; 
     let newData = [];
     let counter = 0;
     for(let i = 0; i < data.length; i ++){
@@ -25,7 +26,8 @@ function getImage(id){
         case 3:
             return "/tempAssets/book3.jpg";
         default:
-            throw new Error("no image");
+            //throw new Error("no image");
+            return "/tempAssets/book1.jpg"
     }
 
 }

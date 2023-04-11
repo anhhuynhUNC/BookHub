@@ -1,6 +1,6 @@
 import Row from "./rowAtom"
 import styles from '@/styles/Home.module.css'
-import { getRowList } from "./atomUtil"
+import { getRowList } from "../../../utils/atomUtil"
 import { useState } from "react"
 
 export default function RowContainer(props) {

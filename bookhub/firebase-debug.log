@@ -1,0 +1,245 @@
+[debug] [2023-04-11T00:42:45.921Z] ----------------------------------------------------------------------
+[debug] [2023-04-11T00:42:45.923Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\sirdu\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2023-04-11T00:42:45.923Z] CLI Version:   11.25.3
+[debug] [2023-04-11T00:42:45.924Z] Platform:      win32
+[debug] [2023-04-11T00:42:45.924Z] Node Version:  v16.17.0
+[debug] [2023-04-11T00:42:45.924Z] Time:          Mon Apr 10 2023 20:42:45 GMT-0400 (Eastern Daylight Time)
+[debug] [2023-04-11T00:42:45.925Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-04-11T00:42:46.011Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-04-11T00:42:46.011Z] > authorizing via signed-in user (sirducanhpro@gmail.com)
+[debug] [2023-04-11T00:42:46.011Z] [iam] checking project bookhub-a0f39 for permissions ["firebase.projects.get","firebasedatabase.instances.update","firebasehosting.sites.update","firebaserules.releases.create","firebaserules.releases.update","firebaserules.rulesets.create"]
+[debug] [2023-04-11T00:42:46.014Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/bookhub-a0f39:testIamPermissions [none]
+[debug] [2023-04-11T00:42:46.014Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/bookhub-a0f39:testIamPermissions x-goog-quota-user=projects/bookhub-a0f39
+[debug] [2023-04-11T00:42:46.014Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/bookhub-a0f39:testIamPermissions {"permissions":["firebase.projects.get","firebasedatabase.instances.update","firebasehosting.sites.update","firebaserules.releases.create","firebaserules.releases.update","firebaserules.rulesets.create"]}
+[debug] [2023-04-11T00:42:46.162Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/bookhub-a0f39:testIamPermissions 200
+[debug] [2023-04-11T00:42:46.162Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/bookhub-a0f39:testIamPermissions {"permissions":["firebase.projects.get","firebasedatabase.instances.update","firebasehosting.sites.update","firebaserules.releases.create","firebaserules.releases.update","firebaserules.rulesets.create"]}
+[debug] [2023-04-11T00:42:46.164Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/bookhub-a0f39 [none]
+[debug] [2023-04-11T00:42:46.446Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/bookhub-a0f39 200
+[debug] [2023-04-11T00:42:46.446Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/bookhub-a0f39 {"projectId":"bookhub-a0f39","projectNumber":"1007110447767","displayName":"BookHub","name":"projects/bookhub-a0f39","resources":{"hostingSite":"bookhub-a0f39","realtimeDatabaseInstance":"bookhub-a0f39-default-rtdb","storageBucket":"bookhub-a0f39.appspot.com","locationId":"us-central"},"state":"ACTIVE","etag":"1_bb5a69c1-ae21-4ca0-ac32-a3be666851e4"}
+[debug] [2023-04-11T00:42:46.447Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/bookhub-a0f39 [none]
+[debug] [2023-04-11T00:42:46.662Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/bookhub-a0f39 200
+[debug] [2023-04-11T00:42:46.662Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/bookhub-a0f39 {"projectId":"bookhub-a0f39","projectNumber":"1007110447767","displayName":"BookHub","name":"projects/bookhub-a0f39","resources":{"hostingSite":"bookhub-a0f39","realtimeDatabaseInstance":"bookhub-a0f39-default-rtdb","storageBucket":"bookhub-a0f39.appspot.com","locationId":"us-central"},"state":"ACTIVE","etag":"1_bb5a69c1-ae21-4ca0-ac32-a3be666851e4"}
+[debug] [2023-04-11T00:42:49.885Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/bookhub-a0f39/sites pageToken=&pageSize=10
+[debug] [2023-04-11T00:42:50.281Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/bookhub-a0f39/sites 200
+[debug] [2023-04-11T00:42:50.281Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/bookhub-a0f39/sites {"sites":[{"name":"projects/bookhub-a0f39/sites/bookhub-a0f39","defaultUrl":"https://bookhub-a0f39.web.app","appId":"1:1007110447767:web:7b73245fd783c92926bfd2","type":"DEFAULT_SITE"}]}
+[debug] [2023-04-11T00:42:50.282Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:1007110447767:web:7b73245fd783c92926bfd2/config [none]
+[debug] [2023-04-11T00:42:50.773Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:1007110447767:web:7b73245fd783c92926bfd2/config 200
+[debug] [2023-04-11T00:42:50.773Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:1007110447767:web:7b73245fd783c92926bfd2/config {"projectId":"bookhub-a0f39","appId":"1:1007110447767:web:7b73245fd783c92926bfd2","databaseURL":"https://bookhub-a0f39-default-rtdb.firebaseio.com","storageBucket":"bookhub-a0f39.appspot.com","locationId":"us-central","apiKey":"AIzaSyASVYySOu4JHhrNJQOWW28kXNk_iOc-CBY","authDomain":"bookhub-a0f39.firebaseapp.com","messagingSenderId":"1007110447767"}
+[debug] [2023-04-11T00:52:26.139Z] ----------------------------------------------------------------------
+[debug] [2023-04-11T00:52:26.141Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\sirdu\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2023-04-11T00:52:26.141Z] CLI Version:   11.25.3
+[debug] [2023-04-11T00:52:26.141Z] Platform:      win32
+[debug] [2023-04-11T00:52:26.142Z] Node Version:  v16.17.0
+[debug] [2023-04-11T00:52:26.147Z] Time:          Mon Apr 10 2023 20:52:26 GMT-0400 (Eastern Daylight Time)
+[debug] [2023-04-11T00:52:26.147Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-04-11T00:52:26.232Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-04-11T00:52:26.232Z] > authorizing via signed-in user (sirducanhpro@gmail.com)
+[debug] [2023-04-11T00:52:26.233Z] [iam] checking project bookhub-a0f39 for permissions ["firebase.projects.get","firebasedatabase.instances.update","firebasehosting.sites.update","firebaserules.releases.create","firebaserules.releases.update","firebaserules.rulesets.create"]
+[debug] [2023-04-11T00:52:26.235Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/bookhub-a0f39:testIamPermissions [none]
+[debug] [2023-04-11T00:52:26.235Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/bookhub-a0f39:testIamPermissions x-goog-quota-user=projects/bookhub-a0f39
+[debug] [2023-04-11T00:52:26.235Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/bookhub-a0f39:testIamPermissions {"permissions":["firebase.projects.get","firebasedatabase.instances.update","firebasehosting.sites.update","firebaserules.releases.create","firebaserules.releases.update","firebaserules.rulesets.create"]}
+[debug] [2023-04-11T00:52:26.392Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/bookhub-a0f39:testIamPermissions 200
+[debug] [2023-04-11T00:52:26.392Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/bookhub-a0f39:testIamPermissions {"permissions":["firebase.projects.get","firebasedatabase.instances.update","firebasehosting.sites.update","firebaserules.releases.create","firebaserules.releases.update","firebaserules.rulesets.create"]}
+[debug] [2023-04-11T00:52:26.393Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/bookhub-a0f39 [none]
+[debug] [2023-04-11T00:52:26.659Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/bookhub-a0f39 200
+[debug] [2023-04-11T00:52:26.659Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/bookhub-a0f39 {"projectId":"bookhub-a0f39","projectNumber":"1007110447767","displayName":"BookHub","name":"projects/bookhub-a0f39","resources":{"hostingSite":"bookhub-a0f39","realtimeDatabaseInstance":"bookhub-a0f39-default-rtdb","storageBucket":"bookhub-a0f39.appspot.com","locationId":"us-central"},"state":"ACTIVE","etag":"1_bb5a69c1-ae21-4ca0-ac32-a3be666851e4"}
+[debug] [2023-04-11T00:52:26.660Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/bookhub-a0f39 [none]
+[debug] [2023-04-11T00:52:26.794Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/bookhub-a0f39 200
+[debug] [2023-04-11T00:52:26.794Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/bookhub-a0f39 {"projectId":"bookhub-a0f39","projectNumber":"1007110447767","displayName":"BookHub","name":"projects/bookhub-a0f39","resources":{"hostingSite":"bookhub-a0f39","realtimeDatabaseInstance":"bookhub-a0f39-default-rtdb","storageBucket":"bookhub-a0f39.appspot.com","locationId":"us-central"},"state":"ACTIVE","etag":"1_bb5a69c1-ae21-4ca0-ac32-a3be666851e4"}
+[debug] [2023-04-11T00:52:30.145Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/bookhub-a0f39/sites pageToken=&pageSize=10
+[debug] [2023-04-11T00:52:30.560Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/bookhub-a0f39/sites 200
+[debug] [2023-04-11T00:52:30.560Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/bookhub-a0f39/sites {"sites":[{"name":"projects/bookhub-a0f39/sites/bookhub-a0f39","defaultUrl":"https://bookhub-a0f39.web.app","appId":"1:1007110447767:web:7b73245fd783c92926bfd2","type":"DEFAULT_SITE"}]}
+[debug] [2023-04-11T00:52:30.560Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:1007110447767:web:7b73245fd783c92926bfd2/config [none]
+[debug] [2023-04-11T00:52:31.038Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:1007110447767:web:7b73245fd783c92926bfd2/config 200
+[debug] [2023-04-11T00:52:31.038Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:1007110447767:web:7b73245fd783c92926bfd2/config {"projectId":"bookhub-a0f39","appId":"1:1007110447767:web:7b73245fd783c92926bfd2","databaseURL":"https://bookhub-a0f39-default-rtdb.firebaseio.com","storageBucket":"bookhub-a0f39.appspot.com","locationId":"us-central","apiKey":"AIzaSyASVYySOu4JHhrNJQOWW28kXNk_iOc-CBY","authDomain":"bookhub-a0f39.firebaseapp.com","messagingSenderId":"1007110447767"}
+[debug] [2023-04-11T00:52:47.576Z] Error: Build optimization failed: found page without a React Component as default export in 
+pages/components/atom/atomUtil
+
+See https://nextjs.org/docs/messages/page-without-valid-component for more info.
+
+    at C:\Users\sirdu\Documents\Comp 590\BookHub\bookhub\node_modules\next\dist\build\index.js:1208:29
+    at async Span.traceAsyncFn (C:\Users\sirdu\Documents\Comp 590\BookHub\bookhub\node_modules\next\dist\trace\trace.js:79:20)
+    at async build (C:\Users\sirdu\Documents\Comp 590\BookHub\bookhub\node_modules\next\dist\build\index.js:73:29)
+    at async build (C:\Users\sirdu\AppData\Roaming\npm\node_modules\firebase-tools\lib\frameworks\next\index.js:55:5)
+    at async prepareFrameworks (C:\Users\sirdu\AppData\Roaming\npm\node_modules\firebase-tools\lib\frameworks\index.js:261:108)
+    at async deploy (C:\Users\sirdu\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\index.js:53:13)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-04-11T00:54:28.929Z] ----------------------------------------------------------------------
+[debug] [2023-04-11T00:54:28.932Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\sirdu\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2023-04-11T00:54:28.932Z] CLI Version:   11.25.3
+[debug] [2023-04-11T00:54:28.932Z] Platform:      win32
+[debug] [2023-04-11T00:54:28.932Z] Node Version:  v16.17.0
+[debug] [2023-04-11T00:54:28.934Z] Time:          Mon Apr 10 2023 20:54:28 GMT-0400 (Eastern Daylight Time)
+[debug] [2023-04-11T00:54:28.934Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-04-11T00:54:29.024Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-04-11T00:54:29.025Z] > authorizing via signed-in user (sirducanhpro@gmail.com)
+[debug] [2023-04-11T00:54:29.025Z] [iam] checking project bookhub-a0f39 for permissions ["firebase.projects.get","firebasedatabase.instances.update","firebasehosting.sites.update","firebaserules.releases.create","firebaserules.releases.update","firebaserules.rulesets.create"]
+[debug] [2023-04-11T00:54:29.027Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/bookhub-a0f39:testIamPermissions [none]
+[debug] [2023-04-11T00:54:29.028Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/bookhub-a0f39:testIamPermissions x-goog-quota-user=projects/bookhub-a0f39
+[debug] [2023-04-11T00:54:29.028Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/bookhub-a0f39:testIamPermissions {"permissions":["firebase.projects.get","firebasedatabase.instances.update","firebasehosting.sites.update","firebaserules.releases.create","firebaserules.releases.update","firebaserules.rulesets.create"]}
+[debug] [2023-04-11T00:54:29.309Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/bookhub-a0f39:testIamPermissions 200
+[debug] [2023-04-11T00:54:29.310Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/bookhub-a0f39:testIamPermissions {"permissions":["firebase.projects.get","firebasedatabase.instances.update","firebasehosting.sites.update","firebaserules.releases.create","firebaserules.releases.update","firebaserules.rulesets.create"]}
+[debug] [2023-04-11T00:54:29.312Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/bookhub-a0f39 [none]
+[debug] [2023-04-11T00:54:29.568Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/bookhub-a0f39 200
+[debug] [2023-04-11T00:54:29.568Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/bookhub-a0f39 {"projectId":"bookhub-a0f39","projectNumber":"1007110447767","displayName":"BookHub","name":"projects/bookhub-a0f39","resources":{"hostingSite":"bookhub-a0f39","realtimeDatabaseInstance":"bookhub-a0f39-default-rtdb","storageBucket":"bookhub-a0f39.appspot.com","locationId":"us-central"},"state":"ACTIVE","etag":"1_bb5a69c1-ae21-4ca0-ac32-a3be666851e4"}
+[debug] [2023-04-11T00:54:29.569Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/bookhub-a0f39 [none]
+[debug] [2023-04-11T00:54:29.826Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/bookhub-a0f39 200
+[debug] [2023-04-11T00:54:29.826Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/bookhub-a0f39 {"projectId":"bookhub-a0f39","projectNumber":"1007110447767","displayName":"BookHub","name":"projects/bookhub-a0f39","resources":{"hostingSite":"bookhub-a0f39","realtimeDatabaseInstance":"bookhub-a0f39-default-rtdb","storageBucket":"bookhub-a0f39.appspot.com","locationId":"us-central"},"state":"ACTIVE","etag":"1_bb5a69c1-ae21-4ca0-ac32-a3be666851e4"}
+[debug] [2023-04-11T00:54:32.976Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/bookhub-a0f39/sites pageToken=&pageSize=10
+[debug] [2023-04-11T00:54:33.400Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/bookhub-a0f39/sites 200
+[debug] [2023-04-11T00:54:33.400Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/bookhub-a0f39/sites {"sites":[{"name":"projects/bookhub-a0f39/sites/bookhub-a0f39","defaultUrl":"https://bookhub-a0f39.web.app","appId":"1:1007110447767:web:7b73245fd783c92926bfd2","type":"DEFAULT_SITE"}]}
+[debug] [2023-04-11T00:54:33.400Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:1007110447767:web:7b73245fd783c92926bfd2/config [none]
+[debug] [2023-04-11T00:54:33.858Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:1007110447767:web:7b73245fd783c92926bfd2/config 200
+[debug] [2023-04-11T00:54:33.858Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:1007110447767:web:7b73245fd783c92926bfd2/config {"projectId":"bookhub-a0f39","appId":"1:1007110447767:web:7b73245fd783c92926bfd2","databaseURL":"https://bookhub-a0f39-default-rtdb.firebaseio.com","storageBucket":"bookhub-a0f39.appspot.com","locationId":"us-central","apiKey":"AIzaSyASVYySOu4JHhrNJQOWW28kXNk_iOc-CBY","authDomain":"bookhub-a0f39.firebaseapp.com","messagingSenderId":"1007110447767"}
+[debug] [2023-04-11T00:54:41.044Z] Error: Export encountered errors on following paths:
+	/components/atom/RowContainer
+	/components/atom/bookAtom
+	/components/atom/rowAtom
+    at C:\Users\sirdu\Documents\Comp 590\BookHub\bookhub\node_modules\next\dist\export\index.js:425:19
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Span.traceAsyncFn (C:\Users\sirdu\Documents\Comp 590\BookHub\bookhub\node_modules\next\dist\trace\trace.js:79:20)
+    at async C:\Users\sirdu\Documents\Comp 590\BookHub\bookhub\node_modules\next\dist\build\index.js:1422:21
+    at async Span.traceAsyncFn (C:\Users\sirdu\Documents\Comp 590\BookHub\bookhub\node_modules\next\dist\trace\trace.js:79:20)
+    at async C:\Users\sirdu\Documents\Comp 590\BookHub\bookhub\node_modules\next\dist\build\index.js:1280:17
+    at async Span.traceAsyncFn (C:\Users\sirdu\Documents\Comp 590\BookHub\bookhub\node_modules\next\dist\trace\trace.js:79:20)
+    at async build (C:\Users\sirdu\Documents\Comp 590\BookHub\bookhub\node_modules\next\dist\build\index.js:73:29)
+    at async build (C:\Users\sirdu\AppData\Roaming\npm\node_modules\firebase-tools\lib\frameworks\next\index.js:55:5)
+    at async prepareFrameworks (C:\Users\sirdu\AppData\Roaming\npm\node_modules\firebase-tools\lib\frameworks\index.js:261:108)
+    at async deploy (C:\Users\sirdu\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\index.js:53:13)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-04-11T01:00:12.183Z] ----------------------------------------------------------------------
+[debug] [2023-04-11T01:00:12.185Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\sirdu\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2023-04-11T01:00:12.185Z] CLI Version:   11.25.3
+[debug] [2023-04-11T01:00:12.185Z] Platform:      win32
+[debug] [2023-04-11T01:00:12.185Z] Node Version:  v16.17.0
+[debug] [2023-04-11T01:00:12.186Z] Time:          Mon Apr 10 2023 21:00:12 GMT-0400 (Eastern Daylight Time)
+[debug] [2023-04-11T01:00:12.187Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-04-11T01:00:12.287Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-04-11T01:00:12.288Z] > authorizing via signed-in user (sirducanhpro@gmail.com)
+[debug] [2023-04-11T01:00:12.288Z] [iam] checking project bookhub-a0f39 for permissions ["firebase.projects.get","firebasedatabase.instances.update","firebasehosting.sites.update","firebaserules.releases.create","firebaserules.releases.update","firebaserules.rulesets.create"]
+[debug] [2023-04-11T01:00:12.291Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/bookhub-a0f39:testIamPermissions [none]
+[debug] [2023-04-11T01:00:12.291Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/bookhub-a0f39:testIamPermissions x-goog-quota-user=projects/bookhub-a0f39
+[debug] [2023-04-11T01:00:12.291Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/bookhub-a0f39:testIamPermissions {"permissions":["firebase.projects.get","firebasedatabase.instances.update","firebasehosting.sites.update","firebaserules.releases.create","firebaserules.releases.update","firebaserules.rulesets.create"]}
+[debug] [2023-04-11T01:00:12.445Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/bookhub-a0f39:testIamPermissions 200
+[debug] [2023-04-11T01:00:12.445Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/bookhub-a0f39:testIamPermissions {"permissions":["firebase.projects.get","firebasedatabase.instances.update","firebasehosting.sites.update","firebaserules.releases.create","firebaserules.releases.update","firebaserules.rulesets.create"]}
+[debug] [2023-04-11T01:00:12.446Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/bookhub-a0f39 [none]
+[debug] [2023-04-11T01:00:12.748Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/bookhub-a0f39 200
+[debug] [2023-04-11T01:00:12.748Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/bookhub-a0f39 {"projectId":"bookhub-a0f39","projectNumber":"1007110447767","displayName":"BookHub","name":"projects/bookhub-a0f39","resources":{"hostingSite":"bookhub-a0f39","realtimeDatabaseInstance":"bookhub-a0f39-default-rtdb","storageBucket":"bookhub-a0f39.appspot.com","locationId":"us-central"},"state":"ACTIVE","etag":"1_bb5a69c1-ae21-4ca0-ac32-a3be666851e4"}
+[debug] [2023-04-11T01:00:12.748Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/bookhub-a0f39 [none]
+[debug] [2023-04-11T01:00:13.008Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/bookhub-a0f39 200
+[debug] [2023-04-11T01:00:13.008Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/bookhub-a0f39 {"projectId":"bookhub-a0f39","projectNumber":"1007110447767","displayName":"BookHub","name":"projects/bookhub-a0f39","resources":{"hostingSite":"bookhub-a0f39","realtimeDatabaseInstance":"bookhub-a0f39-default-rtdb","storageBucket":"bookhub-a0f39.appspot.com","locationId":"us-central"},"state":"ACTIVE","etag":"1_bb5a69c1-ae21-4ca0-ac32-a3be666851e4"}
+[debug] [2023-04-11T01:00:16.201Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/bookhub-a0f39/sites pageToken=&pageSize=10
+[debug] [2023-04-11T01:00:16.755Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/bookhub-a0f39/sites 200
+[debug] [2023-04-11T01:00:16.755Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/bookhub-a0f39/sites {"sites":[{"name":"projects/bookhub-a0f39/sites/bookhub-a0f39","defaultUrl":"https://bookhub-a0f39.web.app","appId":"1:1007110447767:web:7b73245fd783c92926bfd2","type":"DEFAULT_SITE"}]}
+[debug] [2023-04-11T01:00:16.756Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:1007110447767:web:7b73245fd783c92926bfd2/config [none]
+[debug] [2023-04-11T01:00:17.319Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:1007110447767:web:7b73245fd783c92926bfd2/config 200
+[debug] [2023-04-11T01:00:17.319Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:1007110447767:web:7b73245fd783c92926bfd2/config {"projectId":"bookhub-a0f39","appId":"1:1007110447767:web:7b73245fd783c92926bfd2","databaseURL":"https://bookhub-a0f39-default-rtdb.firebaseio.com","storageBucket":"bookhub-a0f39.appspot.com","locationId":"us-central","apiKey":"AIzaSyASVYySOu4JHhrNJQOWW28kXNk_iOc-CBY","authDomain":"bookhub-a0f39.firebaseapp.com","messagingSenderId":"1007110447767"}
+[debug] [2023-04-11T01:00:24.105Z] Error: Export encountered errors on following paths:
+	/components/atom/RowContainer
+	/components/atom/bookAtom
+    at C:\Users\sirdu\Documents\Comp 590\BookHub\bookhub\node_modules\next\dist\export\index.js:425:19
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Span.traceAsyncFn (C:\Users\sirdu\Documents\Comp 590\BookHub\bookhub\node_modules\next\dist\trace\trace.js:79:20)
+    at async C:\Users\sirdu\Documents\Comp 590\BookHub\bookhub\node_modules\next\dist\build\index.js:1422:21
+    at async Span.traceAsyncFn (C:\Users\sirdu\Documents\Comp 590\BookHub\bookhub\node_modules\next\dist\trace\trace.js:79:20)
+    at async C:\Users\sirdu\Documents\Comp 590\BookHub\bookhub\node_modules\next\dist\build\index.js:1280:17
+    at async Span.traceAsyncFn (C:\Users\sirdu\Documents\Comp 590\BookHub\bookhub\node_modules\next\dist\trace\trace.js:79:20)
+    at async build (C:\Users\sirdu\Documents\Comp 590\BookHub\bookhub\node_modules\next\dist\build\index.js:73:29)
+    at async build (C:\Users\sirdu\AppData\Roaming\npm\node_modules\firebase-tools\lib\frameworks\next\index.js:55:5)
+    at async prepareFrameworks (C:\Users\sirdu\AppData\Roaming\npm\node_modules\firebase-tools\lib\frameworks\index.js:261:108)
+    at async deploy (C:\Users\sirdu\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\index.js:53:13)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-04-11T01:01:10.916Z] ----------------------------------------------------------------------
+[debug] [2023-04-11T01:01:10.918Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\sirdu\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2023-04-11T01:01:10.919Z] CLI Version:   11.25.3
+[debug] [2023-04-11T01:01:10.919Z] Platform:      win32
+[debug] [2023-04-11T01:01:10.919Z] Node Version:  v16.17.0
+[debug] [2023-04-11T01:01:10.921Z] Time:          Mon Apr 10 2023 21:01:10 GMT-0400 (Eastern Daylight Time)
+[debug] [2023-04-11T01:01:10.921Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-04-11T01:01:11.027Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-04-11T01:01:11.028Z] > authorizing via signed-in user (sirducanhpro@gmail.com)
+[debug] [2023-04-11T01:01:11.028Z] [iam] checking project bookhub-a0f39 for permissions ["firebase.projects.get","firebasedatabase.instances.update","firebasehosting.sites.update","firebaserules.releases.create","firebaserules.releases.update","firebaserules.rulesets.create"]
+[debug] [2023-04-11T01:01:11.031Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/bookhub-a0f39:testIamPermissions [none]
+[debug] [2023-04-11T01:01:11.031Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/bookhub-a0f39:testIamPermissions x-goog-quota-user=projects/bookhub-a0f39
+[debug] [2023-04-11T01:01:11.031Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/bookhub-a0f39:testIamPermissions {"permissions":["firebase.projects.get","firebasedatabase.instances.update","firebasehosting.sites.update","firebaserules.releases.create","firebaserules.releases.update","firebaserules.rulesets.create"]}
+[debug] [2023-04-11T01:01:11.152Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/bookhub-a0f39:testIamPermissions 200
+[debug] [2023-04-11T01:01:11.152Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/bookhub-a0f39:testIamPermissions {"permissions":["firebase.projects.get","firebasedatabase.instances.update","firebasehosting.sites.update","firebaserules.releases.create","firebaserules.releases.update","firebaserules.rulesets.create"]}
+[debug] [2023-04-11T01:01:11.153Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/bookhub-a0f39 [none]
+[debug] [2023-04-11T01:01:11.358Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/bookhub-a0f39 200
+[debug] [2023-04-11T01:01:11.359Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/bookhub-a0f39 {"projectId":"bookhub-a0f39","projectNumber":"1007110447767","displayName":"BookHub","name":"projects/bookhub-a0f39","resources":{"hostingSite":"bookhub-a0f39","realtimeDatabaseInstance":"bookhub-a0f39-default-rtdb","storageBucket":"bookhub-a0f39.appspot.com","locationId":"us-central"},"state":"ACTIVE","etag":"1_bb5a69c1-ae21-4ca0-ac32-a3be666851e4"}
+[debug] [2023-04-11T01:01:11.359Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/bookhub-a0f39 [none]
+[debug] [2023-04-11T01:01:11.610Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/bookhub-a0f39 200
+[debug] [2023-04-11T01:01:11.611Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/bookhub-a0f39 {"projectId":"bookhub-a0f39","projectNumber":"1007110447767","displayName":"BookHub","name":"projects/bookhub-a0f39","resources":{"hostingSite":"bookhub-a0f39","realtimeDatabaseInstance":"bookhub-a0f39-default-rtdb","storageBucket":"bookhub-a0f39.appspot.com","locationId":"us-central"},"state":"ACTIVE","etag":"1_bb5a69c1-ae21-4ca0-ac32-a3be666851e4"}
+[debug] [2023-04-11T01:01:14.697Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/bookhub-a0f39/sites pageToken=&pageSize=10
+[debug] [2023-04-11T01:01:15.162Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/bookhub-a0f39/sites 200
+[debug] [2023-04-11T01:01:15.162Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/bookhub-a0f39/sites {"sites":[{"name":"projects/bookhub-a0f39/sites/bookhub-a0f39","defaultUrl":"https://bookhub-a0f39.web.app","appId":"1:1007110447767:web:7b73245fd783c92926bfd2","type":"DEFAULT_SITE"}]}
+[debug] [2023-04-11T01:01:15.163Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:1007110447767:web:7b73245fd783c92926bfd2/config [none]
+[debug] [2023-04-11T01:01:15.632Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:1007110447767:web:7b73245fd783c92926bfd2/config 200
+[debug] [2023-04-11T01:01:15.633Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:1007110447767:web:7b73245fd783c92926bfd2/config {"projectId":"bookhub-a0f39","appId":"1:1007110447767:web:7b73245fd783c92926bfd2","databaseURL":"https://bookhub-a0f39-default-rtdb.firebaseio.com","storageBucket":"bookhub-a0f39.appspot.com","locationId":"us-central","apiKey":"AIzaSyASVYySOu4JHhrNJQOWW28kXNk_iOc-CBY","authDomain":"bookhub-a0f39.firebaseapp.com","messagingSenderId":"1007110447767"}
+[debug] [2023-04-11T01:01:22.811Z] Error: Export encountered errors on following paths:
+	/components/atom/RowContainer
+	/components/atom/bookAtom
+    at C:\Users\sirdu\Documents\Comp 590\BookHub\bookhub\node_modules\next\dist\export\index.js:425:19
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Span.traceAsyncFn (C:\Users\sirdu\Documents\Comp 590\BookHub\bookhub\node_modules\next\dist\trace\trace.js:79:20)
+    at async C:\Users\sirdu\Documents\Comp 590\BookHub\bookhub\node_modules\next\dist\build\index.js:1422:21
+    at async Span.traceAsyncFn (C:\Users\sirdu\Documents\Comp 590\BookHub\bookhub\node_modules\next\dist\trace\trace.js:79:20)
+    at async C:\Users\sirdu\Documents\Comp 590\BookHub\bookhub\node_modules\next\dist\build\index.js:1280:17
+    at async Span.traceAsyncFn (C:\Users\sirdu\Documents\Comp 590\BookHub\bookhub\node_modules\next\dist\trace\trace.js:79:20)
+    at async build (C:\Users\sirdu\Documents\Comp 590\BookHub\bookhub\node_modules\next\dist\build\index.js:73:29)
+    at async build (C:\Users\sirdu\AppData\Roaming\npm\node_modules\firebase-tools\lib\frameworks\next\index.js:55:5)
+    at async prepareFrameworks (C:\Users\sirdu\AppData\Roaming\npm\node_modules\firebase-tools\lib\frameworks\index.js:261:108)
+    at async deploy (C:\Users\sirdu\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\index.js:53:13)
+[error] 
+[error] Error: An unexpected error has occurred.
+[debug] [2023-04-11T01:06:21.122Z] ----------------------------------------------------------------------
+[debug] [2023-04-11T01:06:21.124Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\sirdu\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2023-04-11T01:06:21.124Z] CLI Version:   11.25.3
+[debug] [2023-04-11T01:06:21.124Z] Platform:      win32
+[debug] [2023-04-11T01:06:21.125Z] Node Version:  v16.17.0
+[debug] [2023-04-11T01:06:21.126Z] Time:          Mon Apr 10 2023 21:06:21 GMT-0400 (Eastern Daylight Time)
+[debug] [2023-04-11T01:06:21.126Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-04-11T01:06:21.226Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-04-11T01:06:21.226Z] > authorizing via signed-in user (sirducanhpro@gmail.com)
+[debug] [2023-04-11T01:06:21.226Z] [iam] checking project bookhub-a0f39 for permissions ["firebase.projects.get","firebasedatabase.instances.update","firebasehosting.sites.update","firebaserules.releases.create","firebaserules.releases.update","firebaserules.rulesets.create"]
+[debug] [2023-04-11T01:06:21.229Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/bookhub-a0f39:testIamPermissions [none]
+[debug] [2023-04-11T01:06:21.230Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/bookhub-a0f39:testIamPermissions x-goog-quota-user=projects/bookhub-a0f39
+[debug] [2023-04-11T01:06:21.230Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/bookhub-a0f39:testIamPermissions {"permissions":["firebase.projects.get","firebasedatabase.instances.update","firebasehosting.sites.update","firebaserules.releases.create","firebaserules.releases.update","firebaserules.rulesets.create"]}
+[debug] [2023-04-11T01:06:21.392Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/bookhub-a0f39:testIamPermissions 200
+[debug] [2023-04-11T01:06:21.393Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/bookhub-a0f39:testIamPermissions {"permissions":["firebase.projects.get","firebasedatabase.instances.update","firebasehosting.sites.update","firebaserules.releases.create","firebaserules.releases.update","firebaserules.rulesets.create"]}
+[debug] [2023-04-11T01:06:21.394Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/bookhub-a0f39 [none]
+[debug] [2023-04-11T01:06:21.594Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/bookhub-a0f39 200
+[debug] [2023-04-11T01:06:21.594Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/bookhub-a0f39 {"projectId":"bookhub-a0f39","projectNumber":"1007110447767","displayName":"BookHub","name":"projects/bookhub-a0f39","resources":{"hostingSite":"bookhub-a0f39","realtimeDatabaseInstance":"bookhub-a0f39-default-rtdb","storageBucket":"bookhub-a0f39.appspot.com","locationId":"us-central"},"state":"ACTIVE","etag":"1_bb5a69c1-ae21-4ca0-ac32-a3be666851e4"}
+[debug] [2023-04-11T01:06:21.594Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/bookhub-a0f39 [none]
+[debug] [2023-04-11T01:06:21.794Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/bookhub-a0f39 200
+[debug] [2023-04-11T01:06:21.794Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/bookhub-a0f39 {"projectId":"bookhub-a0f39","projectNumber":"1007110447767","displayName":"BookHub","name":"projects/bookhub-a0f39","resources":{"hostingSite":"bookhub-a0f39","realtimeDatabaseInstance":"bookhub-a0f39-default-rtdb","storageBucket":"bookhub-a0f39.appspot.com","locationId":"us-central"},"state":"ACTIVE","etag":"1_bb5a69c1-ae21-4ca0-ac32-a3be666851e4"}
+[debug] [2023-04-11T01:06:24.820Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/bookhub-a0f39/sites pageToken=&pageSize=10
+[debug] [2023-04-11T01:06:25.255Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/bookhub-a0f39/sites 200
+[debug] [2023-04-11T01:06:25.255Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/bookhub-a0f39/sites {"sites":[{"name":"projects/bookhub-a0f39/sites/bookhub-a0f39","defaultUrl":"https://bookhub-a0f39.web.app","appId":"1:1007110447767:web:7b73245fd783c92926bfd2","type":"DEFAULT_SITE"}]}
+[debug] [2023-04-11T01:06:25.256Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:1007110447767:web:7b73245fd783c92926bfd2/config [none]
+[debug] [2023-04-11T01:06:25.648Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:1007110447767:web:7b73245fd783c92926bfd2/config 200
+[debug] [2023-04-11T01:06:25.649Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/-/webApps/1:1007110447767:web:7b73245fd783c92926bfd2/config {"projectId":"bookhub-a0f39","appId":"1:1007110447767:web:7b73245fd783c92926bfd2","databaseURL":"https://bookhub-a0f39-default-rtdb.firebaseio.com","storageBucket":"bookhub-a0f39.appspot.com","locationId":"us-central","apiKey":"AIzaSyASVYySOu4JHhrNJQOWW28kXNk_iOc-CBY","authDomain":"bookhub-a0f39.firebaseapp.com","messagingSenderId":"1007110447767"}
+[debug] [2023-04-11T01:06:34.273Z] Error: Export encountered errors on following paths:
+	/components/atom/RowContainer
+    at C:\Users\sirdu\Documents\Comp 590\BookHub\bookhub\node_modules\next\dist\export\index.js:425:19
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Span.traceAsyncFn (C:\Users\sirdu\Documents\Comp 590\BookHub\bookhub\node_modules\next\dist\trace\trace.js:79:20)
+    at async C:\Users\sirdu\Documents\Comp 590\BookHub\bookhub\node_modules\next\dist\build\index.js:1422:21
+    at async Span.traceAsyncFn (C:\Users\sirdu\Documents\Comp 590\BookHub\bookhub\node_modules\next\dist\trace\trace.js:79:20)
+    at async C:\Users\sirdu\Documents\Comp 590\BookHub\bookhub\node_modules\next\dist\build\index.js:1280:17
+    at async Span.traceAsyncFn (C:\Users\sirdu\Documents\Comp 590\BookHub\bookhub\node_modules\next\dist\trace\trace.js:79:20)
+    at async build (C:\Users\sirdu\Documents\Comp 590\BookHub\bookhub\node_modules\next\dist\build\index.js:73:29)
+    at async build (C:\Users\sirdu\AppData\Roaming\npm\node_modules\firebase-tools\lib\frameworks\next\index.js:55:5)
+    at async prepareFrameworks (C:\Users\sirdu\AppData\Roaming\npm\node_modules\firebase-tools\lib\frameworks\index.js:261:108)
+    at async deploy (C:\Users\sirdu\AppData\Roaming\npm\node_modules\firebase-tools\lib\deploy\index.js:53:13)
+[error] 
+[error] Error: An unexpected error has occurred.

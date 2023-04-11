@@ -1,6 +1,6 @@
 import styles from '@/styles/Home.module.css'
 import Image from 'next/image'
-import { getImage } from './atomUtil'
+import { getImage } from '../../../utils/atomUtil'
 
 export default function  Book(props){
     const source = getImage(props.coverId)
