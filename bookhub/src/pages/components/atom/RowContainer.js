@@ -4,6 +4,9 @@ import { getRowList } from "../../../utils/atomUtil"
 import { useState } from "react"
 
 export default function RowContainer(props) {
+    if(props.data == undefined) return;
+    
+    console.log(props.data);
     let [car, setCar] = useState(0);
     let data = getRowList(props.data);
     let [hasReachEnd, setHasReachEnd] = useState(false);
@@ -36,10 +39,12 @@ export default function RowContainer(props) {
     }
 
     return (
-        <div className={styles.rowContainer}>
+        <>
             {showInBeginning() ? <button onClick={handleLeft}>prev</button> : <></>}
+            <div className={styles.row}>
             <Row data={data[car]}></Row>
+            </div>
             <button onClick={handleRight}>next</button>
-        </div>
+        </>
     )
 }

@@ -279,6 +279,7 @@
 .feedContainer,
 .topContainer {
   height: 100%;
+  font-family: 'calibri';
 }
 
 .main {
@@ -294,6 +295,7 @@
   margin: auto;
   border-radius: 0px 10px 10px 10px;
   overflow-y: auto;
+
 }
 
 .tabHeaderContainer {
@@ -375,25 +377,47 @@
 }
 
 
-
-.testDiv {
-  height: 1000px;
-}
-
 /* Row css */
-.rowContainer{
-  overflow-x:hidden;
-  height: 150px;
+.rowContainer {
+  overflow-x: hidden;
+  height: 33%;
   overflow-y: hidden;
   white-space: nowrap;
+  text-align: center;
+
 }
+
 /* Atom css */
 .bookContainer {
   display: inline-block;
   margin: 10px;
+  height: 80%;
+  width: 10%;
+  position: relative;
+
 }
 
-.bookContainer .img{
+.bookContainer .img {
   border: 2px solid white;
   border-radius: 2px;
+}
+
+.row {
+  display: inline-block;
+  width: 80%;
+  height: 100%;
+
+}
+
+.hoverInfo {
+  position: fixed;
+  background-color: white;
+
+  z-index: 5;
+  padding: 10px;
+  text-align: left;
+  width: 500px;
+  white-space: normal;
+  font-size: 12px;
+  border-radius: 5px;
 }

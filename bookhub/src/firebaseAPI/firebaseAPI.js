@@ -30,7 +30,7 @@ function testData() {
     const valueRef = ref(db, 'test');
 
     console.log(db);
-    
+
     onValue(valueRef, (snapshot) => {
         if (snapshot.exists()) {
             console.log(snapshot.val())
@@ -39,6 +39,16 @@ function testData() {
             return "No data";
         }
     });
+
 }
 
-export { testData }
+//testbook
+function getBook(name, author, subject) {
+    let i = 0;
+    let name_q = name === "any" ? "*" : name;
+    let author_q = author === "any" ? "" : `+inauthor:${author}`
+    let subject_q = subject === "any" ? "" : `+subject:${subject}`
+
+    return fetch(`https://www.googleapis.com/books/v1/volumes?q=${name_q}${author_q}${subject_q}&maxResults=30`+"&key=AIzaSyASVYySOu4JHhrNJQOWW28kXNk_iOc-CBY")
+}
+export { testData, getBook }

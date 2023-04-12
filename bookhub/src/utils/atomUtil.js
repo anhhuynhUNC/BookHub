@@ -1,5 +1,6 @@
 function getRowList(data){
     if(data == undefined) return; 
+    console.log(data);
     let newData = [];
     let counter = 0;
     for(let i = 0; i < data.length; i ++){
